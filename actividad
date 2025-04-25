@@ -1,0 +1,62 @@
+#1.ingreso de datos por consola
+#1.1 Nombre
+print("¿cuál es  su nombre?:")
+nombre=input()
+print(f"su nombre es:{nombre}" ) 
+print("¿cuál es su edad?:")
+edad=input()
+print(f"☺️  Hola {nombre},tu edad es {edad} ¡Que bien!,Agradecemos que estés con nosotros.🫰🏻")
+
+
+
+#1.2 comida favorita
+print("¿cuál es tu comida favorita?:🍽️")
+comida=input()
+print("¿cuál es tu color favorito?🌈")
+color=input()
+print(f"Excelente elección {nombre}, 🍕 Tu comida favorita es: {comida} y el color {color} es hermoso." )
+
+
+#1.3 Número doble y triple
+print("ingrese un  número")
+numero=int (input())
+doble=numero*2
+triple=numero*3
+print(f"El doble de {numero} es:{doble}")
+print(f"El triple de {numero} es:{triple}") 
+
+
+#2.1 declarar variable
+str= nombre
+int = 45
+float = 10.25
+bool="ES ROJO O NO" 
+
+#2.2 convierte una cadena 
+#se define cadena con el valor númerico
+cadena= "59"
+#se convierte a entero
+numero = int(cadena)
+print(numero+78)
+#suma
+
+#2.3 CONVIERTE TEXTO A FLOTANTE
+#se define texto
+texto="68"
+#se convierte a flotante
+convertido= float(texto)
+print(convertido*2)
+
+#2.4convertir un caracter
+print("ingrese un caracter:")
+caracter= input()
+def se_puede_convertir (caracter):
+    try:
+        float(caracter)
+        return True
+    except ValueError:
+       return False
+resultado= se_puede_convertir(caracter)
+print(resultado)
+
+
