@@ -59,4 +59,107 @@ def se_puede_convertir (caracter):
 resultado= se_puede_convertir(caracter)
 print(resultado)
 
+#3.1 #CALCULA EL AREA DE UN RECTANGULO
+print("INGRESE LA BASE DEL RECTANGULO:")
+BASE= int (input())
+print("INGRESE LA ALTURA DEL RECTANGULO:")
+ALTURA= int(input())
+print(f"La base del rectángulo es {BASE} y la altura es {ALTURA}")
+AREA=(BASE*ALTURA)
+print (f"El area del rectangulo es:{AREA}")
+
+#3.2 Dado un precio y un porcentaje de descuento, muestra el valor final a pagar.
+print("ingrese un precio:")
+precio= int(input())
+print("ingrese un porcentaje:")
+porcentaje= int(input())
+valorffinal=(precio*porcentaje)/100
+print(f"su precio con descuento es:{valorffinal}")
+
+#3.3 #Calcula el residuo de dividir dos números dados por el usuario.
+print("ingresa un número")
+numero1=int(input())
+print("ingresa otro numero")
+numero2=int(input())
+resultado=numero1/numero2
+print(f"{numero1} divido {numero2} es igual:{resultado}")
+
+#3.4 #Escribe una fórmula que use al menos tres operadores diferentes y muestre el resultado.
+print("escriba un número")
+numero1=int (input())
+print("escriba un otro número")
+numero2=int (input())
+#suma
+resultado=numero1+numero2
+print(f"La suma de {numero1} + {numero2} es: {resultado} ")
+
+#resta
+resultado=numero1-numero2
+print(f"La resta de {numero1} - {numero2} es: {resultado} ")
+
+#multiplicacion
+resultado=numero1*numero2
+print(f"La multiplicacion de {numero1} * {numero2} es: {resultado} ")
+
+#4.1 #Pide dos números e indica cuál es mayor o si son iguales.
+print("ingresa un número")
+num1= int (input())
+print("ingresa otro número")
+num2= int (input())
+
+if num1<num2:
+    print(f"El numero mayor es:{num2}")
+else:
+    print(f"el número menor es:{num2}")
+
+#4.2 #Solicita una edad y determina si la persona es menor de edad (menor a 18).
+print("ingrese su edad")
+edad=int (input())
+
+if edad<18:
+    print("es menor de edad")
+else:
+    print("es mayor de edad")
+
+#4.3 #Escribe un programa que compare dos cadenas de texto e indique si son iguales o distintas.
+print("ingrese una palabra")
+texto1=input()
+print("ingrese otro palabra")
+texto2=input()
+
+if texto1 == texto2:
+  print("son iguales")
+else:
+    print("son distintas")
+
+#5.1 #Pide al usuario su edad y si tiene licencia de conducción. Solo si ambas condiciones se cumplen, imprime que puede conducir
+print("cuál es tu edad?")
+edad=int (input())
+
+print("tienes licencia de conducción? responda si o no")
+licencia= input().lower()
+
+if edad >= 16 and licencia == "si":
+    print("la persona puede conducir")
+else:
+    print("No es apto para conducir")
+
+#5.2 #Solicita si una persona tiene experiencia laboral y título universitario. Usa operadores lógicos para decidir si puede aplicar a una oferta de trabajo.
+tiene_experiencia = True  
+tiene_titulo = True
+
+if tiene_experiencia and tiene_titulo:
+    print("La persona puede aplicar a la oferta de trabajo.")
+else:
+    print("La persona NO cumple con los requisitos.")
+
+#5.3 #Dado un número, determina si está en el rango de 10 a 50 (inclusive).
+numero = 35
+
+if 10 <= numero <= 50:  # Esto verifica si el número está entre 10 y 50 (incluidos)
+    print("El número está en el rango de 10 a 50.")
+else:
+    print("El número está fuera del rango.")
+
+
 
